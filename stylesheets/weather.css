@@ -1,0 +1,351 @@
+.icon
+{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #CCC;
+}
+
+.icon.partly-cloudy .cloud
+{
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+
+.icon.mostly-cloudy .cloud + .cloud
+{
+    position: relative;
+    top: -140px;
+    left: -15px;
+    z-index: -1;
+}
+
+.icon.rainy .rain
+{
+    z-index: 1;
+    position: relative;
+    top: -100px;
+}
+
+.icon.heavy-rain .cloud div
+{
+    background-color: #C6C6C6;
+}
+.icon.heavy-rain .rain
+{
+    z-index: 1;
+    position: relative;
+    top: -100px;
+}
+
+.icon.snowfall .snow
+{
+    position: relative;
+    top: -100px;
+}
+
+.icon.storm .cloud div
+{
+    background-color: #C6C6C6;
+}
+
+.icon.storm .lightning
+{
+    position: relative;
+    top: -103px;
+    z-index: 1;
+    left: 8px;
+}
+
+/* GLOBAL */
+.sun, .cloud, .snow, .rain, .lightning, .fog
+{
+    margin: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/* SUN */
+.sun .background
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #FFF832;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.sun .glow
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #FFF832;
+    position: relative;
+    top: -70px;
+    left: 10px
+}
+
+/* CLOUD */
+.cloud .base
+{
+    width: 90px;
+    height: 30px;
+    top: 60px;
+    left: 9px;
+    border-radius: 40px;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.cloud .bubble1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #FFF;
+    position: relative;
+    top: 8px;
+    left: 22px;
+    z-index: 1;
+}
+
+.cloud .bubble2
+{
+    width: 26px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #FFF;
+    position: relative;
+    top: -31px;
+    left: 61px;
+    z-index: 1;
+}
+
+.cloud .baseShadow
+{
+    width: 92px;
+    height: 32px;
+    top: -46px;
+    left: 8px;
+    border-radius: 40px;
+    background-color: #000;
+    position: relative;
+    box-shadow: 1px 1px 2px #000;
+    z-index: 0;
+}
+
+.cloud .bubble1Shadow
+{
+    width: 52px;
+    height: 52px;
+    border-radius: 40px;
+    background-color: #000;
+    position: relative;
+    top: -100px;
+    left: 21px;
+    box-shadow: 1px 1px 2px #000;
+    z-index: 0;
+}
+
+.cloud .bubble2Shadow
+{
+    width: 28px;
+    height: 27px;
+    border-radius: 25px;
+    background-color: #000;
+    position: relative;
+    top: -141px;
+    left: 60px;
+    box-shadow: 1px 1px 2px #000;
+    z-index: 0;
+}
+
+/* SNOW */
+.snow .range1,
+.snow .range2,
+.snow .range3
+{
+    position: relative;
+    width: 80px;
+    height: 11px;
+}
+
+.snow .range1
+{
+    top: 66px;
+    left: 19px;
+}
+
+.snow .range2
+{
+    top: 59px;
+    left: 13px;
+}
+
+.snow .range3
+{
+    top: 52px;
+    left: 7px;
+}
+
+.snow .snowflake
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #777;
+    box-shadow: 1px 1px 2px #777;
+    margin: 4px;
+    float: left;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+/* RAIN */
+.rain .range1,
+.rain .range2,
+.rain .range3,
+.rain .range4
+{
+    position: relative;
+    width: 80px;
+    height: 15px;
+}
+
+.rain .range1
+{
+    top: 68px;
+    left: 24px;
+}
+
+.rain .range2
+{
+    top: 58px;
+    left: 18px;
+}
+
+.rain .range3
+{
+    top: 48px;
+    left: 12px;
+}
+
+.rain .range4
+{
+    top: 38px;
+    left: 6px;
+}
+
+.rain .raindrop
+{
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid #00F;
+    margin: 5px;
+    float: left;
+    background-color: #6f97ff;
+    z-index: 10;
+}
+
+/* LIGHTNING */
+.lightning .form .top
+{
+    width: 17px;
+    height: 10px;
+    -moz-transform: skew(-44deg);
+    -webkit-transform: skew(-44deg);
+    background-color: #FFF832;
+    position: relative;
+    top: 77px;
+    left: 28px;
+}
+
+.lightning .form .middle
+{
+    width: 28px;
+    height: 6px;
+    background-color: #FFF832;
+    -moz-transform: skew(-66deg);
+    -webkit-transform: skew(-66deg);
+    position: relative;
+    top: 71px;
+    left: 30px;
+}
+
+.lightning .form .tail
+{
+    border: 9px solid transparent;
+    border-left-color: #FFF832;
+    border-top-color: #FFF832;
+    width: 0px;
+    height: 0px;
+    -moz-transform: initial(51deg);
+    -webkit-transform: skew(-51deg);
+    position: relative;
+    top: 66px;
+    left: 34px;
+}
+
+.lightning .shadow
+{
+    position: relative;
+    top: -33px;
+    z-index: -1;
+    left: 1px;
+}
+
+.lightning .shadow .top
+{
+    width: 18px;
+    height: 11px;
+    -moz-transform: skew(-44deg);
+    -webkit-transform: skew(-44deg);
+    background-color: black;
+    position: relative;
+    top: 75px;
+    left: 27px;
+}
+
+.lightning .shadow .middle
+{
+    width: 29px;
+    height: 7px;
+    background-color: black;
+    -moz-transform: skew(-66deg);
+    -webkit-transform: skew(-66deg);
+    position: relative;
+    top: 69px;
+    left: 28px;
+}
+
+.lightning  .shadow .tail
+{
+    border: 11px solid transparent;
+    border-left-color: black;
+    border-top-color: black;
+    width: 0px;
+    height: 0px;
+    -moz-transform: initial(51deg);
+    -webkit-transform: skew(-51deg);
+    position: relative;
+    top: 61px;
+    left: 32px;
+}
+
+/* FOG */
+.fog .form
+{
+    width: 30px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    box-shadow: 0px 0px 30px 15px #777777;
+}
