@@ -1,3 +1,3 @@
 WeatherIcons
 =============
-Weather icons created in pure CSS
+Weather icons created onyl with HTML and CSS
