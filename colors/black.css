@@ -1,0 +1,71 @@
+.icon.heavy-rain .cloud div,
+.icon.storm .cloud div
+{
+    background-color: #000;
+}
+.sun .background
+{
+    background-color: #000;
+}
+
+.sun .glow
+{
+    box-shadow: 0px 0px 10px #000;
+}
+.cloud .base,
+.cloud .bubble1,
+.cloud .bubble2
+{
+    background-color: #000;
+}
+
+.cloud .baseShadow,
+.cloud .bubble1Shadow,
+.cloud .bubble2Shadow
+{
+    background-color: #000;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.snow .snowflake
+{
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px #000;
+    background-color: #000;
+}
+.rain .raindrop
+{
+    border: 1px solid #000;
+    background-color: #000;
+}
+.lightning .form .top,
+.lightning .form .middle
+{
+    background-color: #000;
+}
+
+.lightning .form .tail
+{
+    border-left-color: #000;
+    border-top-color: #000;
+}
+.lightning .shadow .top,
+.lightning .shadow .middle
+{
+    background-color: #000;
+}
+
+.lightning  .shadow .tail
+{
+    border-left-color: #000;
+    border-top-color: #000;
+}
+.mist .shadow
+{
+    box-shadow: 0px 0px 70px #000;
+}
+
+.mist .background
+{
+    background-color: #000;
+}
