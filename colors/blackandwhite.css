@@ -1,30 +1,16 @@
-/*
-COLORS
-- Sun           #FFF832
-- cloud         #FFF
-- dark cloud    #C6C6C6
-- snow          #FFF
-- snow border   #777
-- rain          #6f97ff
-- rain border   #00F
-- lightning     #FFF832
-- mist          #808080
-- shadow        #000
-*/
-
 .icon.heavy-rain .cloud div,
 .icon.storm .cloud div
 {
-    background-color: #C6C6C6;
+    background-color: #FFF;
 }
 .sun .background
 {
-    background-color: #FFF832;
+    background-color: #FFF;
 }
 
 .sun .glow
 {
-    box-shadow: 0px 0px 10px #FFF832;
+    box-shadow: 0px 0px 10px #000;
 }
 .cloud .base,
 .cloud .bubble1,
@@ -43,25 +29,25 @@ COLORS
 
 .snow .snowflake
 {
-    border: 1px solid #777;
-    box-shadow: 1px 1px 2px #777;
-    background-color: #FFF;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px #000;
+    background-color: #000;
 }
 .rain .raindrop
 {
-    border: 1px solid #00F;
-    background-color: #6f97ff;
+    border: 1px solid #000;
+    background-color: #000;
 }
 .lightning .form .top,
 .lightning .form .middle
 {
-    background-color: #FFF832;
+    background-color: #000;
 }
 
 .lightning .form .tail
 {
-    border-left-color: #FFF832;
-    border-top-color: #FFF832;
+    border-left-color: #000;
+    border-top-color: #000;
 }
 .lightning .shadow .top,
 .lightning .shadow .middle
@@ -76,10 +62,10 @@ COLORS
 }
 .mist .shadow
 {
-    box-shadow: 0px 0px 70px #808080;
+    box-shadow: 0px 0px 70px #000;
 }
 
 .mist .background
 {
-    background-color: #808080;
+    background-color: #000;
 }
