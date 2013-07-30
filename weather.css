@@ -2,7 +2,6 @@
 {
     width: 120px;
     height: 120px;
-    border: 1px solid #CCC;
 }
 
 .icon.partly-cloudy .cloud
@@ -26,11 +25,6 @@
     position: relative;
     top: -100px;
 }
-
-.icon.heavy-rain .cloud div
-{
-    background-color: #C6C6C6;
-}
 .icon.heavy-rain .rain
 {
     z-index: 1;
@@ -42,11 +36,6 @@
 {
     position: relative;
     top: -100px;
-}
-
-.icon.storm .cloud div
-{
-    background-color: #C6C6C6;
 }
 
 .icon.storm .lightning
@@ -72,7 +61,6 @@
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    background-color: #FFF832;
     position: relative;
     top: 10px;
     left: 10px;
@@ -83,7 +71,6 @@
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    box-shadow: 0px 0px 10px #FFF832;
     position: relative;
     top: -70px;
     left: 10px
@@ -97,7 +84,6 @@
     top: 60px;
     left: 9px;
     border-radius: 40px;
-    background-color: #FFF;
     position: relative;
     z-index: 1;
 }
@@ -107,7 +93,6 @@
     width: 50px;
     height: 50px;
     border-radius: 40px;
-    background-color: #FFF;
     position: relative;
     top: 8px;
     left: 22px;
@@ -119,7 +104,6 @@
     width: 26px;
     height: 25px;
     border-radius: 25px;
-    background-color: #FFF;
     position: relative;
     top: -31px;
     left: 61px;
@@ -133,9 +117,7 @@
     top: -46px;
     left: 8px;
     border-radius: 40px;
-    background-color: #000;
     position: relative;
-    box-shadow: 1px 1px 2px #000;
     z-index: 0;
 }
 
@@ -144,11 +126,9 @@
     width: 52px;
     height: 52px;
     border-radius: 40px;
-    background-color: #000;
     position: relative;
     top: -100px;
     left: 21px;
-    box-shadow: 1px 1px 2px #000;
     z-index: 0;
 }
 
@@ -157,11 +137,9 @@
     width: 28px;
     height: 27px;
     border-radius: 25px;
-    background-color: #000;
     position: relative;
     top: -141px;
     left: 60px;
-    box-shadow: 1px 1px 2px #000;
     z-index: 0;
 }
 
@@ -199,11 +177,8 @@
     height: 5px;
     border-radius: 5px;
     position: relative;
-    border: 1px solid #777;
-    box-shadow: 1px 1px 2px #777;
     margin: 4px;
     float: left;
-    background-color: #FFF;
     z-index: 10;
 }
 
@@ -248,10 +223,8 @@
     height: 2px;
     border-radius: 2px;
     position: relative;
-    border: 1px solid #00F;
     margin: 5px;
     float: left;
-    background-color: #6f97ff;
     z-index: 10;
 }
 
@@ -262,7 +235,8 @@
     height: 10px;
     -moz-transform: skew(-44deg);
     -webkit-transform: skew(-44deg);
-    background-color: #FFF832;
+    -o-transform: skew(-66deg);
+    transform: skew(-66deg);
     position: relative;
     top: 77px;
     left: 28px;
@@ -272,9 +246,10 @@
 {
     width: 28px;
     height: 6px;
-    background-color: #FFF832;
     -moz-transform: skew(-66deg);
     -webkit-transform: skew(-66deg);
+    -o-transform: skew(-66deg);
+    transform: skew(-66deg);
     position: relative;
     top: 71px;
     left: 30px;
@@ -283,12 +258,12 @@
 .lightning .form .tail
 {
     border: 9px solid transparent;
-    border-left-color: #FFF832;
-    border-top-color: #FFF832;
     width: 0px;
     height: 0px;
-    -moz-transform: initial(51deg);
+    -moz-transform: skew(51deg);
     -webkit-transform: skew(-51deg);
+    -o-transform: skew(-51deg);
+    transform: skew(-51deg);
     position: relative;
     top: 66px;
     left: 34px;
@@ -308,7 +283,6 @@
     height: 11px;
     -moz-transform: skew(-44deg);
     -webkit-transform: skew(-44deg);
-    background-color: black;
     position: relative;
     top: 75px;
     left: 27px;
@@ -318,7 +292,6 @@
 {
     width: 29px;
     height: 7px;
-    background-color: black;
     -moz-transform: skew(-66deg);
     -webkit-transform: skew(-66deg);
     position: relative;
@@ -329,8 +302,6 @@
 .lightning  .shadow .tail
 {
     border: 11px solid transparent;
-    border-left-color: black;
-    border-top-color: black;
     width: 0px;
     height: 0px;
     -moz-transform: initial(51deg);
@@ -340,15 +311,6 @@
     left: 32px;
 }
 
-/* FOG */
-.fog .form
-{
-    width: 30px;
-    position: relative;
-    top: 50px;
-    left: 20px;
-    box-shadow: 0px 0px 30px 15px #777777;
-}
 /* MIST */
 .mist .shadow,
 .mist .background 
@@ -356,18 +318,118 @@
     width: 50px;
     height: 50px;
     border-radius: 20px;
-    top: -25px;
-    left: 25px;
+    top: 36px;
+    left: 36px;
     position: relative;
 }
 
 .mist .shadow 
 {
-    box-shadow: 0px 0px 70px gray
+    top: -14px;
 }
 
 .mist .background 
 {
+    opacity: 0.3;
+}
+
+/* colors */
+.icon.heavy-rain .cloud div
+{
+    background-color: #C6C6C6;
+}
+
+.icon.storm .cloud div
+{
+    background-color: #C6C6C6;
+}
+
+.sun .background
+{
+    background-color: #FFF832;
+}
+
+.sun .glow
+{
+    box-shadow: 0px 0px 10px #FFF832;
+}
+.cloud .base
+{
+    background-color: #FFF;
+}
+
+.cloud .bubble1
+{
+    background-color: #FFF;
+}
+.cloud .bubble2
+{
+    background-color: #FFF;
+}
+.cloud .baseShadow
+{
+    background-color: #000;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.cloud .bubble1Shadow
+{
+    background-color: #000;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.cloud .bubble2Shadow
+{
+    background-color: #000;
+    box-shadow: 1px 1px 2px #000;
+}
+.snow .snowflake
+{
+    border: 1px solid #777;
+    box-shadow: 1px 1px 2px #777;
+    background-color: #FFF;
+}
+.rain .raindrop
+{
+    border: 1px solid #00F;
+    background-color: #6f97ff;
+}
+.lightning .form .top
+{
+    background-color: #FFF832;
+}
+
+.lightning .form .middle
+{
+    background-color: #FFF832;
+}
+
+.lightning .form .tail
+{
+    border-left-color: #FFF832;
+    border-top-color: #FFF832;
+}
+.lightning .shadow .top
+{
+    background-color: black;
+}
+
+.lightning .shadow .middle
+{
+    background-color: black;
+}
+
+.lightning  .shadow .tail
+{
+    border-left-color: black;
+    border-top-color: black;
+}
+.mist .shadow
+{
+    box-shadow: 0px 0px 70px gray;
+}
+
+.mist .background
+{
     background-color: gray;
-    opacity: 0.3;    
 }
