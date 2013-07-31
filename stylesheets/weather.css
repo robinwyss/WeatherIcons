@@ -233,10 +233,11 @@
 {
     width: 17px;
     height: 10px;
-    -moz-transform: skew(-44deg);
-    -webkit-transform: skew(-44deg);
-    -o-transform: skew(-66deg);
-    transform: skew(-66deg);
+    -moz-transform: skewX(-44deg);
+    -webkit-transform: skewX(-44deg);
+    -o-transform: skewX(-44deg);
+    -ms-transform: skewX(-44deg);
+    transform: skew(-44deg);
     position: relative;
     top: 77px;
     left: 28px;
@@ -246,9 +247,10 @@
 {
     width: 28px;
     height: 6px;
-    -moz-transform: skew(-66deg);
-    -webkit-transform: skew(-66deg);
-    -o-transform: skew(-66deg);
+    -moz-transform: skewX(-66deg);
+    -webkit-transform: skewX(-66deg);
+    -o-transform: skewX(-66deg);
+    -ms-transform: skewX(-66deg);
     transform: skew(-66deg);
     position: relative;
     top: 71px;
@@ -260,10 +262,11 @@
     border: 9px solid transparent;
     width: 0px;
     height: 0px;
-    -moz-transform: skew(51deg);
-    -webkit-transform: skew(-51deg);
-    -o-transform: skew(-51deg);
-    transform: skew(-51deg);
+    -moz-transform: skewX(-51deg);
+    -webkit-transform: skewX(-51deg);
+    -o-transform: skewX(-51deg);
+    -ms-transform: skewX(-51deg);
+    transform: skewX(-51deg);
     position: relative;
     top: 66px;
     left: 34px;
@@ -281,8 +284,11 @@
 {
     width: 18px;
     height: 11px;
-    -moz-transform: skew(-44deg);
-    -webkit-transform: skew(-44deg);
+    -moz-transform: skewX(-44deg);
+    -webkit-transform: skewX(-44deg);
+    -o-transform: skewX(-44deg);
+    -ms-transform: skewX(-44deg);
+    transform: skewX(-44deg);
     position: relative;
     top: 75px;
     left: 27px;
@@ -292,8 +298,11 @@
 {
     width: 29px;
     height: 7px;
-    -moz-transform: skew(-66deg);
-    -webkit-transform: skew(-66deg);
+    -moz-transform: skewX(-66deg);
+    -webkit-transform: skewX(-66deg);
+    -o-transform: skewX(-66deg);
+    -ms-transform: skewX(-66deg);
+    transform: skewX(-66deg);
     position: relative;
     top: 69px;
     left: 28px;
@@ -304,13 +313,15 @@
     border: 11px solid transparent;
     width: 0px;
     height: 0px;
-    -moz-transform: initial(51deg);
-    -webkit-transform: skew(-51deg);
+    -moz-transform: skewX(-51deg);
+    -webkit-transform: skewX(-51deg);
+    -o-transform: skewX(-51deg);
+    -ms-transform: skewX(-51deg);
+    transform: skewX(-51deg);
     position: relative;
     top: 61px;
     left: 32px;
 }
-
 /* MIST */
 .mist .shadow,
 .mist .background 
