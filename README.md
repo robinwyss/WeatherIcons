@@ -1,2 +1,2 @@
 ## WeatherIcons
-Weather icons created onyl with HTML and CSS
+Weather icons created only with HTML and CSS
